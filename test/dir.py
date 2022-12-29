@@ -5,6 +5,6 @@ import time
 os.chdir(r"C:\Users\HP\Desktop\Arpit\Python")
 os.mkdir("test2")
 print(os.getcwd())
-time.sleep(5)
+time.sleep(6)
 
 os.rmdir("test2")
