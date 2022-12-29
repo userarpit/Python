@@ -1,2 +1,5 @@
 *.pdf
 /test/*.txt
+/Compare/Files
+*.jpg
+*.zip
