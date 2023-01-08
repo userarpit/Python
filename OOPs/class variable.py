@@ -3,6 +3,7 @@
 
 # Class for Computer Science Student
 class CSStudent:
+	'''Class for Computer Science Student '''
 	stream = 'cse'				 # Class Variable
 	def __init__(self,name,roll):
 		self.name = name		 # Instance Variable
@@ -34,3 +35,13 @@ CSStudent.stream = 'mech'
 
 print(a.stream) # prints 'ece'
 print(b.stream) # prints 'mech'
+
+print(getattr(a,'name'))
+print(hasattr(a,'name1'))
+
+print(CSStudent.__dict__)
+print(CSStudent.__doc__)
+print(CSStudent.__name__)
+print(CSStudent.__module__)
+print(CSStudent.__bases__)
+print(a.__class__.__name__)
