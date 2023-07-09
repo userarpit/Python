@@ -13,5 +13,10 @@ pipeline {
                 sh 'python table_of_8.py'
             }
         }
+     stage('Factorial') {
+            steps {
+                sh 'python /test1/factorial.py'
+            }
+        }
     }
 }
