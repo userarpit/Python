@@ -3,10 +3,9 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('version') {
             steps {
-                /*sh 'python --version'*/
-             echo 'hello arpit'
+                sh 'python --version'
             }
         }
     }
