@@ -15,7 +15,7 @@ pipeline {
         }
      stage('Factorial') {
             steps {
-                sh 'python /test1/factorial.py'
+                sh 'python test1/factorial.py'
             }
         }
     }
