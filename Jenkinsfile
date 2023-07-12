@@ -17,6 +17,8 @@ pipeline {
             steps {
                 sh 'python test1/factorial.py'
                 echo "build number is ${currentBuild.number}"
+                echo currentBuild.displayName
+                echo currentBuild.fullDisplayName 
             }
         }
     }
