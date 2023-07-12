@@ -16,6 +16,7 @@ pipeline {
      stage('Factorial') {
             steps {
                 sh 'python test1/factorial.py'
+                echo 'build number is ${currentBuild.number}'
             }
         }
     }
