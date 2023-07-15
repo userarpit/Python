@@ -20,6 +20,7 @@ pipeline {
                 echo currentBuild.displayName
                 echo currentBuild.fullDisplayName
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                sh 'printenv'
             }
         }
     }
