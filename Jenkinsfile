@@ -18,7 +18,8 @@ pipeline {
                 sh 'python test1/factorial.py'
                 echo "build number is ${currentBuild.number}"
                 echo currentBuild.displayName
-                echo currentBuild.fullDisplayName 
+                echo currentBuild.fullDisplayName
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
     }
