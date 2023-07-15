@@ -2,6 +2,9 @@
  Requires the Docker Pipeline plugin */
 pipeline {
     agent any
+    triggers {
+     cron '* * * * *'
+    }
     stages {
         stage('version') {
             steps {
