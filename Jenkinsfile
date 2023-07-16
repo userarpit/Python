@@ -35,6 +35,7 @@ pipeline {
                   cat README.md
                '''
                echo "Branch name is ${env.BRANCH_NAME}"
+               echo "change id ${env.CHANGE_ID}"
             }
         }
     }
