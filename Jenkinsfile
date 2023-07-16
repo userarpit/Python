@@ -28,12 +28,13 @@ pipeline {
         }
      stage('cat README') {
             when {
-                branch "fix-*"
+                branch "main"
             }
             steps {
                sh '''
                   cat README.md
                '''
+               echo "Branch name is ${env.BRANCH_NAME}"
             }
         }
     }
