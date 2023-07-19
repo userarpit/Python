@@ -24,6 +24,7 @@ pipeline {
                 echo currentBuild.fullDisplayName
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 sh 'printenv'
+                echo "Branch name is ${env.BRANCH_NAME}"
             }
         }
      stage('cat README') {
