@@ -5,3 +5,4 @@
 *.zip
 resources-20220218t175944z-001/
 /test1/__pycache__
+/*/__pycache__
