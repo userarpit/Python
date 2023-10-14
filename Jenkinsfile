@@ -11,7 +11,8 @@ pipeline {
                 sh 'python --version'
             }
         }
-     stage('Table of 8') {
+     s
+     tage('Table of 8') {
             steps {
                 sh 'python table_of_8.py'
             }

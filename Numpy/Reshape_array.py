@@ -25,3 +25,7 @@ my_list_reshape = list(np_array_reshape)
 print(my_list_reshape[1][3])
 print(np_array_reshape[2,3])
 print(np_array_reshape[2][3])
+
+print(np.mean(np_array))
+print(np.median(np_array))
+#print(np.mode(np_array))

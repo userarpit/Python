@@ -1,6 +1,8 @@
 def summation(mylist):
     
     a = int(mylist.pop())
+    """ print(a)
+    print(mylist) """
     total = 0
     def sum_list(a,total):
         total += a

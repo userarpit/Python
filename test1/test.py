@@ -1,18 +1,22 @@
+import random
+#num = int(input("Enter number = "))
+#for i in range(1,(num // 2) + 1):
+#    if (num % i == 0):
+#        print(f"{i} is a factor of {num}")
 
+def un_fair_coin_flip(probability):
+    if (random.random() < probability):
+        return "head"
+    else:
+        return "tail"
 
-print("hello")
-if False:
-    print("yes")
-else:
-  print("no")
-    
-mylist = ["arpit",1,1.3,
-            4.5,"khandelwal"]
+head_tally = 0
+tail_tally = 0
+for i in range(10_000):
+    if (un_fair_coin_flip(0.25) == "head"):
+        head_tally += 1
+    else:
+        tail_tally += 1
 
-print(mylist)
-
-''' comment'''
-str1 = ''' arpit '''
-print(str1)
-A = input("Enter your name - ")
-print("Your name is :", A)
+print(head_tally)
+print(tail_tally)

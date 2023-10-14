@@ -1,4 +1,4 @@
-dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First', 'Name': 'Arpit'}
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
 dict['Age'] = 8 # update existing entry
 dict['School'] = "DPS School" # Add new entry
 print( "dict['Age']: ", dict['Age'])
@@ -32,3 +32,6 @@ print(dict1.keys())
 print(dict1.values())
 
 print('%(Company)s is a %(Department)s Portal.' %{'Company': "GFG", 'Department': "CS"})
+
+dict1.update({"Company":"AGK"});
+print(dict1)

@@ -24,3 +24,6 @@ print("sum is ", a+b)
 # and type casting using list() function
 x = list(map(int, input("Enter multiple values: ").split()))
 print("List of students: ", x)
+
+x = input("Enter vehicle values: ").split("?")
+print(x)
