@@ -16,7 +16,7 @@ class Person:
         return cls(name, date.date.today().year - year)
 
     @staticmethod
-    def is_adult(age):
+    def is_adult(age):  
         return age > 18
 
 person1 = Person('Arpit',36)

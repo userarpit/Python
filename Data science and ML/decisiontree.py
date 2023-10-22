@@ -4,6 +4,7 @@ from sklearn import metrics
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sympy import primerange
 
 df = pd.read_csv("diabetes.csv")
 # print(df.head())
@@ -32,3 +33,4 @@ plt.title('Confusion Matrix')
 plt.ylabel('Actual label')
 plt.xlabel('Predicted label')
 plt.show()
+print(list(primerange(2,1000)))

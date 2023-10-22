@@ -24,3 +24,5 @@ print(y_predict)
 print(f"Accuracy {metrics.accuracy_score(y_test, y_predict):.2f}")
 
 print(model.predict([[4, 5, 30.5, 40, 150, 65, 0.6]]))
+
+

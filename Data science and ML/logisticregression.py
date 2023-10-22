@@ -4,6 +4,7 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import numpy as np
 
 df = pd.read_csv("admission.csv")
 
@@ -28,3 +29,5 @@ plt.xlabel('Predicted label')
 plt.show()
 
 print(model.predict([[690,3.08,3]]))
+print(y_test != y_pred)
+print(np.mean(y_test != y_pred))
