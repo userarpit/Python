@@ -13,12 +13,13 @@ print(data[0:5, :])
 
 plt.title("Customer Dendrogram")
 
-
-cluster = AgglomerativeClustering(n_clusters=5,affinity='euclidean',linkage='ward')
-cluster.fit_predict(data)
-print(cluster.labels_)
 dend = shc.dendrogram(shc.linkage(data,method='ward'))
 plt.show()
+
+cluster = AgglomerativeClustering(n_clusters=4,affinity='euclidean',linkage='ward')
+cluster.fit_predict(data)
+print(cluster.labels_)
+
 plt.scatter(data[:,0],data[:,1],c=cluster.labels_,cmap="rainbow")
 plt.show()
 

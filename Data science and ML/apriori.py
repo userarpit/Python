@@ -13,7 +13,7 @@ print(data.values[0,1])
 for i in range (0,10):
     transactions.append([str(data.values[i,j]) for j in range(0,5)])
     
-# print(transactions)
+print(transactions)
 
 rules = apriori(transactions=transactions,min_support = 0.003, 
                 min_confidence = 0.2,min_lift = 3, min_length = 2, max_length=2)
@@ -21,6 +21,7 @@ rules = apriori(transactions=transactions,min_support = 0.003,
 associations = list(rules)
 
 print(len(associations))
-print(associations[32],"\n",end="\n")
-# print(associations[1])
+print(associations[0],"\n",end="\n")
+print(associations[1],"\n",end="\n")
+print(associations)
 # print(associations)
