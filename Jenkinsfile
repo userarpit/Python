@@ -2,24 +2,20 @@
  Requires the Docker Pipeline plugin */
 pipeline {
     agent any
-    triggers {
-     cron 'H * * * *'
-    }
     stages {
         stage('version') {
             steps {
                 sh 'python --version'
             }
         }
-     s
-     tage('Table of 8') {
+     stage('Table of 8') {
             steps {
                 sh 'python table_of_8.py'
             }
         }
      stage('Factorial') {
             steps {
-                sh 'python test1/factorial.py'
+                sh 'python3 test1/factorial.py'
                 echo "build number is ${currentBuild.number}"
                 echo currentBuild.displayName
                 echo currentBuild.fullDisplayName
