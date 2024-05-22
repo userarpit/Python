@@ -25,7 +25,7 @@ pipeline {
      }
      stage('cat README') {
             when {
-                branch "main"
+                not (branch "main")
             }
             steps {
                sh '''
