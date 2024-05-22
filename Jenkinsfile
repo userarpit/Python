@@ -5,12 +5,12 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }
      stage('Table of 8') {
             steps {
-                sh 'python table_of_8.py'
+                sh 'python3 table_of_8.py'
             }
         }
      stage('Factorial') {
