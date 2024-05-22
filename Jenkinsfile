@@ -8,11 +8,6 @@ pipeline {
                 sh 'python3 --version'
             }
         }
-     stage('Table of 8') {
-            steps {
-                sh 'python3 table_of_8.py'
-            }
-        }
      stage('Factorial') {
             steps {
                 sh 'python3 test1/factorial.py'
