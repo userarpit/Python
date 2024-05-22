@@ -21,19 +21,8 @@ pipeline {
      stage('branch name') {
       steps {
        echo "Branch name is ${env.BRANCH_NAME}"
+       echo "change id ${env.CHANGE_ID}"
       }
      }
-     stage('cat README') {
-            when {
-                branch "main"
-            }
-            steps {
-               sh '''
-                  cat README.md
-               '''
-               echo "Branch name is ${env.BRANCH_NAME}"
-               echo "change id ${env.CHANGE_ID}"
-            }
-        }
     }
 }
