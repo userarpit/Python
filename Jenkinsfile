@@ -1,7 +1,12 @@
 /*Jenkinsfile (Declarative Pipeline)
  Requires the Docker Pipeline plugin */
 pipeline {
-    agent any
+    agent {
+     label {
+            label 'windows'
+            retries 1
+        }
+    }
     stages {
         stage('version') {
             steps {
